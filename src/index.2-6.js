@@ -75,38 +75,7 @@ class CreateComment extends Component {
             content: "",
             user: ""
         };
-        this.handleFillUser = this.handleFillUser.bind(this);
-        this.handleComment = this.handleComment.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
-
-    handleFillUser(event) {
-        const u = event.target.value;
-        this.setState(() => (
-            {
-                user: u
-            }
-        ));
-    }
-
-    handleComment(event) {
-        const c = event.target.value;
-        this.setState(() => (
-            {
-                content: c
-            }
-        ));
-    }
-
-    handleSubmit(event) {
-        this.setState(() => (
-            {
-                user: '',
-                content: ''
-            }
-        ));
-    }
-
     render() {
         return React.createElement(
             "form",

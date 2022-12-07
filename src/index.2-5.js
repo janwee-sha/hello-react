@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
+import React, {Component} from "react";
+import {render} from "react-dom";
 import PropTypes from "prop-types";
 
 const node = document.getElementById("root");
@@ -39,6 +39,7 @@ Post.propTypes = {
 
 class Comment extends Component {
     render() {
+        console.log("yo");
         return React.createElement(
             "div",
             {
@@ -68,71 +69,6 @@ Comment.propTypes = {
     user: PropTypes.string.isRequired
 };
 
-class CreateComment extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            content: "",
-            user: ""
-        };
-        this.handleFillUser = this.handleFillUser.bind(this);
-        this.handleComment = this.handleComment.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleFillUser(event) {
-        const u = event.target.value;
-        this.setState(() => (
-            {
-                user: u
-            }
-        ));
-    }
-
-    handleComment(event) {
-        const c = event.target.value;
-        this.setState(() => (
-            {
-                content: c
-            }
-        ));
-    }
-
-    handleSubmit(event) {
-        this.setState(() => (
-            {
-                user: '',
-                content: ''
-            }
-        ));
-    }
-
-    render() {
-        return React.createElement(
-            "form",
-            {
-                className: "createComment"
-            },
-            React.createElement("input", {
-                type: "text",
-                placeholder: "Your name",
-                value: this.state.user
-            }),
-            React.createElement("input", {
-                type: "text",
-                placeholder: "Thoughts?"
-            }),
-            React.createElement("input", {
-                type: "submit",
-                value: "Post"
-            })
-        );
-    }
-}
-CreateComment.propTypes = {
-    content: PropTypes.string
-};
-
 const App = React.createElement(
     Post,
     {
@@ -140,12 +76,12 @@ const App = React.createElement(
         content: " said: This is a post!",
         user: "mark"
     },
-    React.createElement(Comment, {
-        id: 2,
-        user: "bob",
-        content: " commented: wow! how cool!"
-    }),
-    React.createElement(CreateComment)
+    React.createElement(Comment,
+        {
+            id: 2,
+            user: "bob",
+            content: " commented: wow! how cool!"
+        })
 );
 
 render(App, node);
