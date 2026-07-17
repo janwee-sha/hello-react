@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title description">
+  <title id="title">小猫头像</title>
+  <desc id="description">蓝色背景上一只戴着红色围巾的橙色小猫</desc>
+  <rect width="240" height="240" fill="#b6e3ff"/>
+  <path d="M61 89 48 33l57 35M179 89l13-56-57 35" fill="#f2a65a" stroke="#633c27" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="120" cy="119" r="75" fill="#f2a65a" stroke="#633c27" stroke-width="8"/>
+  <path d="M87 112c8-8 16-8 24 0M153 112c-8-8-16-8-24 0" fill="none" stroke="#633c27" stroke-width="8" stroke-linecap="round"/>
+  <path d="m120 124-9 10h18z" fill="#d05b62"/>
+  <path d="M103 144c11 10 23 10 34 0" fill="none" stroke="#633c27" stroke-width="7" stroke-linecap="round"/>
+  <path d="M66 178c31 18 77 20 108 0l-8 45H74z" fill="#e45757" stroke="#633c27" stroke-width="8" stroke-linejoin="round"/>
+</svg>
