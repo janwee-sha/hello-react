@@ -1,16 +1,25 @@
 // React 组件必须以大写字母开头，而 HTML 标签则必须是小写字母。
-function MyButton() {
+function Components() {
     return (
         <button>Click me!</button>
     );
 }
 
+function AboutPage() {
+    return (
+        <>
+            <h1>关于</h1>
+            <p>你好。<br/>最近怎么样？</p>
+        </>
+    );
+}
 // export default 关键字指定了文件中的主要组件。
 export default function MyApp() {
     return (
         <div>
             <h1>Welcome to my app!</h1>
-            <MyButton />
+            <Components />
+            <AboutPage />
         </div>
     );
 }
