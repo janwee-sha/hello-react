@@ -1,11 +1,15 @@
+import {useState} from "react";
+
 function Button() {
+    const [count, changeCountTo] = useState(0);
+
     function handleClick() {
-        alert("How dare you click me!")
+        changeCountTo(count + 1);
     }
 
-    return <button onClick={handleClick}>Button</button>
+    return <button onClick={handleClick}>Clicked {count} times.</button>
 }
 
-export default function HandlingEvent() {
+export default function UsingState() {
     return <Button/>
 }
