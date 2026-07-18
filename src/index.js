@@ -1,8 +1,8 @@
 import React from "react";
 import {createRoot} from "react-dom/client";
-import UsingState from "./official-docs/quick-start/using-state";
+import SharingData from "./official-docs/quick-start/sharing-data";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-root.render(<UsingState/>);
+root.render(<SharingData/>);
