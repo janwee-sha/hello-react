@@ -1,8 +1,8 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import AddingStyles from "./official-docs/quick-start/adding-styles.jsx";
+import {createRoot} from "react-dom/client";
+import ConditionalStatement from "./official-docs/quick-start/conditional-statement";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-root.render(<AddingStyles />);
+root.render(<ConditionalStatement/>);
